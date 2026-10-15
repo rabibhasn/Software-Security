@@ -1,0 +1,66 @@
+# ============================================
+# ISRM Project — .gitignore
+# ============================================
+
+# ---- Virtual Environment ----
+venv/
+.venv*/
+env/
+
+# ---- Python Cache ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.pytest_cache/
+
+# ---- Environment Variables ----
+.env
+.env.*
+!.env.example
+
+# ---- Flask Session ----
+flask_session/
+
+# ---- Database (auto-generated at runtime) ----
+*.db
+*.sqlite
+*.sqlite3
+
+# ---- Uploads (runtime directory) ----
+uploads/*
+!uploads/.gitkeep
+
+# ---- Sensitive / Credentials ----
+jenkins_pass.txt
+*.pem
+*.key
+
+# ---- Build Logs ----
+*.log
+
+# ---- IDE & OS ----
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb
+
+# ---- Jenkins ----
+.jenkins.yml
+
+# ---- Temporary / One-off Scripts ----
+check_security_gate.py
+
+#-----Jenkins Password----#
+initialAdminPassword.txt
+
+
+#---- report----#
+reports/*
+!reports/*.pdf
