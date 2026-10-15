@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        PYTHON_PATH = "python"
+        PYTHON_PATH = 'C:\\Users\\rabib\\AppData\\Local\\Python\\bin\\python.exe'
         REPORT_DIR = 'reports'
     }
     
